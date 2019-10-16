@@ -51,6 +51,9 @@ def min_cookies():
     print(f"The min value of cookies: {co_value2}")
 
 
+cookies_sum = sum(cookies)
+candies_sum = sum(candies)
+
 cookies_input()
 cookies_avg()
 candies_avg()
@@ -58,4 +61,10 @@ max_candies()
 max_cookies()
 min_candies()
 min_cookies()
+
+if cookies_sum > candies_sum:
+    print("Cookies are the most popular at the Hartwick Bakery!")
+
+if cookies_sum < candies_sum:
+    print("Candies are the most popular at the Hartwick Bakery!")
 
