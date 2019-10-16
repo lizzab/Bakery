@@ -6,7 +6,7 @@
 # the cookie_input function the user will tell user to enter six values (LOOP) which will be added to the list
 
 cookies = []
-candies = [70, 90, 77, 60, 66, 88]
+candies = []
 
 
 def cookies_input():
@@ -14,6 +14,14 @@ def cookies_input():
         value = int(input("Enter six numbers that will be added to the cookies list: "))
         cookies.append(value)
     print(cookies)
+
+
+def candies_input():
+    for i in range(0,6):
+        value_ca = int(input("Enter six values for the candies list: "))
+        candies.append(value_ca)
+    print(candies)
+
 
 # define a function that will compute and print the average monthly sales for cookies.
 
@@ -55,6 +63,7 @@ cookies_sum = sum(cookies)
 candies_sum = sum(candies)
 
 cookies_input()
+candies_input()
 cookies_avg()
 candies_avg()
 max_candies()
@@ -64,7 +73,6 @@ min_cookies()
 
 if cookies_sum > candies_sum:
     print("Cookies are the most popular at the Hartwick Bakery!")
-
-if cookies_sum < candies_sum:
+else:
     print("Candies are the most popular at the Hartwick Bakery!")
 
